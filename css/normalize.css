@@ -1,0 +1,55 @@
+<style>
+
+/* -------------------- */
+/* 1. GLOBAL RESETS */
+/* -------------------- */
+
+/* Remove default margins/paddings from block-level text elements */
+h1, h2, h3, h4, h5, h6, p, blockquote {
+  margin: 0;
+  padding: 0;
+  display: block;
+  box-sizing: border-box;
+}
+
+/* Inline text normalization */
+span, a, strong, em, small {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Remove Webflow's built-in Rich Text spacing */
+.w-richtext h1,
+.w-richtext h2,
+.w-richtext h3,
+.w-richtext h4,
+.w-richtext h5,
+.w-richtext h6,
+.w-richtext p,
+.w-richtext blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+/* Reset list styles but preserve font styles */
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Reset for f-grid utility combos (prevents Webflow auto-styles) */
+[class^="f-g-col-"],
+[class*=" f-g-col-"] {
+  display: block;
+  box-sizing: border-box;
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+  min-height: 0;
+}
+
+</style>
