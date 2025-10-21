@@ -1,0 +1,41 @@
+/* Visible only in Webflow Designer */
+html.wf-design-mode .f-grid-layout-guide {
+  display: flex !important;
+}
+
+html:not(.wf-design-mode) .f-grid-layout-guide {
+  display: none !important;
+}
+
+/* Base overlay setup */
+.f-grid-layout-guide {
+  position: fixed;
+  inset: 0;
+  z-index: 9998;
+  justify-content: center;
+  pointer-events: none;
+  mix-blend-mode: multiply;
+  opacity: 0.18;
+}
+
+/* Inner grid — always 12 columns */
+.f-grid-layout-inner {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: var(--gap-x, 1.5rem); /* syncs with f-grid system */
+  row-gap: 0;
+  max-width: var(--layout-width, 94.5rem);
+  width: 100%;
+  height: 100%;
+  margin-inline: auto;
+  padding-inline: var(--padding-inline, 3rem);
+  box-sizing: border-box;
+}
+
+/* Column styling */
+.f-grid-col {
+  background: rgba(255, 0, 0, 0.25);
+  border-radius: 0.125rem;
+  width: 100%;
+  height: 100%;
+}
