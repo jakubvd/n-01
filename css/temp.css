@@ -1,9 +1,46 @@
-<!-- ===================================
-     GRID SYSTEM
-     12-column layout on all breakpoints
-     =================================== -->
 
 <style>
+/* -------------------- */
+/* 1. Global resets & normalizers */
+/* -------------------- */
+
+/* Reset default margins/paddings for typographic elements */
+h1, h2, h3, h4, h5, h6, p, blockquote {
+  all: unset;
+  display: block;
+  box-sizing: border-box;
+}
+
+/* Make all text inherit typography and spacing */
+h1, h2, h3, h4, h5, h6, p, blockquote, span, a, li {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+  font-weight: inherit;
+  letter-spacing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+/* Reset all f-grid utility combos (prevents Webflow auto-styles) */
+[class^="f-g-col-"],
+[class*=" f-g-col-"] {
+  all: unset;
+  display: block;
+  box-sizing: border-box;
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+  min-height: 0;
+}
+
+/* -------------------- */
+/* 2. GRID SYSTEM */
+/* -------------------- */
+
 :root {
   /* Layout base */
   --layout-width: 94.5rem; /* 1512px ÷ 16 */
