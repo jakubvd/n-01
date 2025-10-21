@@ -68,31 +68,4 @@
 .f-g-col-start-10 { grid-column-start: 10; }
 .f-g-col-start-11 { grid-column-start: 11; }
 .f-g-col-start-12 { grid-column-start: 12; }
-
-/* -------------------- */
-/* 3. FLEXIBLE LAYOUT HELPERS */
-/* -------------------- */
-
-/* Vertical layout (stacked) */
-.f-layout-vertical {
-  display: flex;
-  flex-direction: column;
-  gap: var(--gap-y, 1.5rem); /* optional gap */
-}
-
-/* Horizontal layout (row-based) */
-.f-layout-horizontal {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  gap: var(--gap-x, 1.5rem);
-}
-
-/* Mixed layout — acts as a mini grid for complex cases */
-.f-layout-grid {
-  display: grid;
-  grid-template-columns: repeat(var(--cols), 1fr);
-  column-gap: var(--gap-x);
-  row-gap: var(--gap-y);
-}
 </style>
